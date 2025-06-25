@@ -6,10 +6,10 @@ This project demonstrates a complete data analytics workflow using Python, Snowf
 ## Overview
 
 - **Dataset:** Yelp open dataset (~5GB JSON file with ~7 million reviews)
-- **Tools used:** Python, AWS S3, Snowflake, SQL
+- **Tools used:** Python, Snowflake, SQL
 - **Key steps:**
   - Splitting large JSON files into smaller chunks using Python for faster parallel ingestion
-  - Loading data from S3 local machine Snowflake tables with semi-structured JSON data using the VARIANT data type
+  - Loading data from local machine Snowflake tables with semi-structured JSON data using the VARIANT data type
   - Creating Python User Defined Functions (UDFs) in Snowflake for sentiment analysis of review texts
   - Writing SQL queries to answer medium to hard-level analytical questions on the data
 
@@ -21,11 +21,10 @@ This project demonstrates a complete data analytics workflow using Python, Snowf
 ## Project Workflow
 
 1. **Splitting JSON File:**  
-   The large reviews JSON file is split into multiple smaller files (e.g., 20-25 files) using a Python script. This enables faster parallel upload to S3 and ingestion into Snowflake.
+   The large reviews JSON file is split into multiple smaller files (e.g., 20-25 files) using a Python script. This enables faster parallel upload and ingestion into Snowflake.
 
 2. **Loading Data into Snowflake:**  
-   - Create Snowflake tables with a single VARIANT column to store JSON data.  
-   - Use Snowflake's `COPY INTO` command to load data from S3 into Snowflake tables in parallel.
+   Create Snowflake tables with a single VARIANT column to store JSON data.  
 
 3. **Transforming JSON to Tabular Format:**  
    Use Snowflake SQL functions to parse JSON data from VARIANT columns into structured columns for analysis.
