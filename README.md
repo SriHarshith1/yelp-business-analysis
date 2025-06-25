@@ -34,3 +34,8 @@ This project demonstrates a complete data analytics workflow using Python, Snowf
 
 5. **SQL Analysis:**  
    Write SQL queries to explore the data and answer interesting business questions, leveraging the structured data and sentiment analysis results.
+
+## Query Worksheets
+
+- [Query Worksheet 1](https://app.snowflake.com/hbhfiyx/pb81167/w26uIomAEcqZ#query)
+- [Query Worksheet 2](https://app.snowflake.com/hbhfiyx/pb81167/w26uIomAEcqZ#query)
