@@ -24,7 +24,7 @@ This project demonstrates a complete data analytics workflow using Python, Snowf
    The large reviews JSON file is split into multiple smaller files (e.g., 20-25 files) using a Python script. This enables faster parallel upload and ingestion into Snowflake.
 
 2. **Loading Data into Snowflake:**  
-   - Create Snowflake tables with a single VARIANT column to store JSON data.  
+   Create Snowflake tables with a single VARIANT column to store JSON data.  
 
 3. **Transforming JSON to Tabular Format:**  
    Use Snowflake SQL functions to parse JSON data from VARIANT columns into structured columns for analysis.
